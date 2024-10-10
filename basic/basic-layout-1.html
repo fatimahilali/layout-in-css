@@ -8,8 +8,39 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: 1fr 2fr; /* Twee kolommen, de tweede kolom is breder */
+        grid-template-rows: auto 1fr auto; /* Drie rijen */
+        gap: 10px; /* Ruimte tussen de elementen */
+        height: 100vh; /* Zorg dat het volledige venster wordt gevuld */
       }
-      /* Doe hier jouw ding! */
+
+      header {
+        grid-column: span 2; /* De header neemt beide kolommen in beslag */
+        background-color: #4A90E2; /* Blauwe kleur */
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #D0021B; /* Rode kleur */
+        padding: 20px;
+      }
+
+      main {
+        background-color: #F8E71C; /* Gele kleur */
+        padding: 20px;
+      }
+
+      footer {
+        grid-column: span 2; /* De footer neemt beide kolommen in beslag */
+        background-color: #4A4A4A; /* Zwarte kleur */
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
     </style>
   </head>
   <body id="basic-layout-1">
