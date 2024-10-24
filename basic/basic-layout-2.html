@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 2</title>
-    <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: 150px 50px 300px 60px; 
+        gap: 20px; 
+        width: 400px; 
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #4A90E2;
+      }
+
+      nav {
+        background-color: #C21B6A;
+      }
+
+      main {
+        background-color: #F7E041;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        line-height: 60px;
+      }
     </style>
   </head>
-  <body id="basic-layout-2">
-    <header><h1>Basic Layout 2</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+  <body>
+    <div class="container">
+      <header></header>
+      <nav></nav>
+      <main></main>
+      <footer>basic-layout-2</footer>
+    </div>
   </body>
 </html>

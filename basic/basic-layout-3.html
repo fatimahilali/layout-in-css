@@ -4,15 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 3</title>
-    <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: 300px 100px 100px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 400px;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      header {
+        grid-row: 1;
+        background-color: #F7E041;
+      }
+
+      footer {
+        grid-row: 2;
+        background-color: #333;
+      }
+
+      .bottom {
+        display: flex;
+        gap: 20px;
+      }
+
+      .blue {
+        background-color: #4A90E2;
+        flex: 1;
+      }
+
+      .magenta {
+        background-color: #C21B6A;
+        flex: 1;
+      }
+
+      footer, .bottom {
+        height: 100px;
+      }
     </style>
   </head>
   <body id="basic-layout-3">
-    <header><h1>Basic Layout 3</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <header></header>
+      <footer></footer>
+      <div class="bottom">
+        <div class="blue"></div>
+        <div class="magenta"></div>
+      </div>
+    </div>
   </body>
 </html>

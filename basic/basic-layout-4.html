@@ -4,15 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 4</title>
-    <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px;
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .yellow {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: #F7E041;
+      }
+
+      .blue {
+        grid-column: 2;
+        grid-row: 1;
+        background-color: #4A90E2;
+      }
+
+      .black {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #333;
+      }
+
+      .magenta {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: #C21B6A;
+      }
     </style>
   </head>
   <body id="basic-layout-4">
-    <header><h1>Basic Layout 4</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="black"></div>
+      <div class="magenta"></div>
+    </div>
   </body>
 </html>

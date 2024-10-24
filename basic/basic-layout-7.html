@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 7</title>
-    <link rel="stylesheet" href="../style.css">
     <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
       main {
-        padding: 1em;
+        background-color: #F7E041;
+        width: 400px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        position: relative;
       }
-      nav {
-        min-height: 5em;
-      }
+
       p {
         margin: 0;
       }
-      
-      /* Doe hier jouw ding! */
+
+      .magenta-box {
+        background-color: #C21B6A;
+        width: 80px;
+        height: 150px;
+        float: right;
+        margin: 0 0 10px 10px;
+      }
     </style>
   </head>
   <body id="basic-layout-7">
     <main>
-      <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+      <div class="magenta-box"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </main>
   </body>

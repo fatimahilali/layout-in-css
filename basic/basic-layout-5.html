@@ -4,15 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 5</title>
-    <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 300px;
+        height: 600px;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .blue {
+        background-color: #4A90E2;
+        width: 100%;
+        height: 100px;
+      }
+
+      .magenta {
+        background-color: #C21B6A;
+        width: 100%;
+        height: 80px;
+        margin-left: -50px; 
+      }
+
+      .yellow {
+        background-color: #F7E041;
+        width: 100%;
+        height: 80px;
+      }
+
+      .black {
+        background-color: #333;
+        width: 100%;
+        height: 100px;
+      }
     </style>
   </head>
   <body id="basic-layout-5">
-    <header><h1>Basic Layout 5</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <div class="blue"></div>
+      <div class="magenta"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
   </body>
 </html>
